@@ -1,0 +1,4 @@
+services:
+  - name: web
+    dockerfileService:
+      buildCommand: pip install -r requirements.txt && gunicorn -b :$PORT app:app
